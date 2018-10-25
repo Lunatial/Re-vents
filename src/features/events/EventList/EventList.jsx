@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import EventListItem from './EventListItem.jsx'
+import React, { Component } from "react";
+import EventListItem from "./EventListItem.jsx";
 
- class EventList extends Component {
+class EventList extends Component {
   render() {
+    const { events } = this.props;
     return (
       <div>
         <h1>Event List</h1>
-        <EventListItem/>
-        <EventListItem/>
-        <EventListItem/>
-        <EventListItem/>
+        {events && events.map(event => (
+          <EventListItem key={event.id} event={event} />
+        ))}
       </div>
-    )
+    );
   }
 }
 
-export default EventList
+export default EventList;
