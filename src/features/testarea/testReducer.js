@@ -1,5 +1,5 @@
 // import { createReducer } from "../../app/common/util/reducerUtil";
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from "./testConstants";
+import { INCREMENT_COUNTER, DECREMENT_COUNTER } from "./testActions";
 
 const initialState = {
   data: 42

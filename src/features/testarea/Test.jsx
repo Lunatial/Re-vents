@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Button } from "semantic-ui-react";
-import { incrementCounter, decrementCounter } from "./testAction";
+import { incrementCounter, decrementCounter } from "./testActionCreator";
 
 class Test extends Component {
   render() {
